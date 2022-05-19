@@ -45,7 +45,8 @@ class CounterController extends Controller
                 "errorMsg" => ("查询计数异常" . $e->getMessage())
             ];
             Log::info('getCount rsp: '.json_encode($res));
-            return response()->json($res);
+//             return response()->json($res);
+            return 'hello';
         }
     }
 
